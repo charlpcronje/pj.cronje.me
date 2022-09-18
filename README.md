@@ -6,6 +6,7 @@
 - [Node Modules Used](./docs/README.md)
 - [About the Service Worker](./docs/sw.md)
 - [Download the Android App](https://pj.cronje.me/app-release-signed.apk)
+- [Detailed list of updates](https://github.com/charlpcronje/pj.pwa.tests/commits/main)
 
 ## App Under Development
 
