@@ -45,9 +45,9 @@ async function forgotPasswordFailed(ctx) {
     }); 
 }
 
-async function loginUser(ctx) {
+async function loginUser(ctxq) {
 
-    const body = ctx.req.body
+    const body = ctx.request.body
     console.log(ctx);
 
     show.header = false;
@@ -90,12 +90,12 @@ async function register(ctx) {
 
 
 
-async function registerUser() {
-const body = ctx.req.body
+async function registerUser(ctx,req) {
+const body = ctx.request.body
 console.log(ctx);
   const user = await prisma.user.create({
         data : {
-            role : 'BAISC',
+            role : 'BASIC',
             firstName :body.firstName,
             lastName :body.lastName,
             initials :body.initials,
