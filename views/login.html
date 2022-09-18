@@ -1,0 +1,58 @@
+<div class="login-wrapper d-flex align-items-center justify-content-center">
+    <div class="custom-container">
+      <div class="text-center px-4">
+        <img class="login-intro-img" src="/assets/img/36.webp" alt="">
+      </div>
+  
+      <!-- Register Form -->
+      <div class="register-form mt-4">
+        <% if(!show.failedLogin){ %>
+          <h6 class="mb-3 text-center">Log in to continue to your Journey</h6>
+        <% } %>
+        <% if(show.failedLogin){ %>
+          <h6 class="mb-3 text-center">Log in Failed, please try again</h6>
+        <% } %>
+        <form method="PUT" action="/login">
+          <div class="form-group">
+            <input 
+              class="form-control" 
+              type="text" 
+              id="username" 
+              placeholder="Email" 
+              name="email"
+              autocomplete="off" 
+              style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+          </div>
+  
+          <div class="form-group position-relative">
+            <input 
+              class="form-control" 
+              id="psw-input" 
+              type="password" 
+              placeholder="Enter Password" 
+              name="password"
+              style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+            <div class="position-absolute" id="password-visibility">
+              <i class="bi bi-eye"></i>
+              <i class="bi bi-eye-slash"></i>
+            </div>
+          </div>
+  
+          <button class="btn btn-primary w-100" type="submit">
+            Sign In
+          </button>
+        </form>
+      </div>
+  
+      <!-- Login Meta -->
+      <div class="login-meta-data text-center">
+        <a class="stretched-link forgot-password d-block mt-3 mb-1" href="/forgotPassword">Forgot Password?</a>
+        <p class="mb-0">
+          <span>Don't have an account?</span> 
+          <a class="stretched-link" href="/register">Register Now</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+   

@@ -1,0 +1,43 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild --outfile=sw.js --bundle sw.ts && workbox injectManifest",
+    "start": "nodemon app.js",
+    "devStart": "nodemon src/user.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.2",
+    "koa": "^2.13.4",
+    "koa-basic-auth": "^4.0.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-ejs": "^4.3.0",
+    "koa-favicon": "^2.1.0",
+    "koa-json": "^2.0.2",
+    "koa-methodoverride": "^2.0.0",
+    "koa-passport": "^5.0.0",
+    "koa-router": "^12.0.0",
+    "koa-session": "^6.2.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^4.3.1",
+    "@types/node": "^18.7.18",
+    "esbuild": "^0.15.7",
+    "nodemon": "^2.0.19",
+    "prisma": "^4.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3",
+    "workbox-cli": "^6.5.4",
+    "workbox-precaching": "^6.5.4",
+    "workbox-routing": "^6.5.4",
+    "workbox-strategies": "^6.5.4"
+  }
+}

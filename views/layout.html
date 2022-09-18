@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://designing-world.com/affan-1.5/page-login.html -->
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <% include partials/_headerMeta.html %>
+    
+    <!-- Title -->
+    <title><%- title %></title>
+
+    <!-- Favicon -->
+    <% include partials/_favicons.html %>
+
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" defer href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json">
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <% include partials/_preLoader.html %>
+
+    <!-- Internet Connection Status -->
+    <% include partials/_conStatus.html %>
+
+
+    <!-- Light ot dark mode -->
+    <% if(show.mode){ %>
+      <% include partials/_mode.html %>
+    <% } %>
+
+    <!-- Settings Overlay Button -->
+    <% if(show.back){ %>
+      <% include partials/_settingsOverlay.html %>
+    <% } %>
+
+    <!-- Back Button -->
+    <% if(show.back){ %>
+      <% include partials/_back.html %>
+    <% } %>
+   
+     <!-- Header Area -->
+    <% if(show.header){ %>
+      <% include partials/_header.html %>
+    <% } %>
+    <!-- Body Content Gets Loaded Here -->
+    <%- body %>
+
+    <!-- Footer Nav -->
+    <% if(show.footerNav){ %>
+      <% include partials/_footerNav.html %>
+    <% } %>
+
+    <!-- All JavaScript Files -->
+    <% if(show.footerScripts){ %>
+      <% include partials/_footerScripts.html %>
+    <% } %>
+    
+  </body>
+</html>

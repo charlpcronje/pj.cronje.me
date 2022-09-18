@@ -1,0 +1,80 @@
+<!-- Setting Popup Overlay -->
+<div id="setting-popup-overlay"></div>
+
+<!-- Setting Popup Card -->
+<div class="card setting-popup-card shadow-lg" id="settingCard">
+  <div class="card-body">
+    <div class="container">
+      <div class="setting-heading d-flex align-items-center justify-content-between mb-3">
+        <p class="mb-0">Settings</p>
+        <div class="btn-close" id="settingCardClose"></div>
+      </div>
+
+      <div class="single-setting-panel">
+        <div class="form-check form-switch mb-2">
+          <input class="form-check-input" type="checkbox" id="availabilityStatus" checked="">
+          <label class="form-check-label" for="availabilityStatus">Availability status</label>
+        </div>
+      </div>
+
+      <div class="single-setting-panel">
+        <div class="form-check form-switch mb-2">
+          <input class="form-check-input" type="checkbox" id="sendMeNotifications" checked="">
+          <label class="form-check-label" for="sendMeNotifications">Send me notifications</label>
+        </div>
+      </div>
+
+      <div class="single-setting-panel">
+        <div class="form-check form-switch mb-2">
+          <input class="form-check-input" type="checkbox" id="darkSwitch">
+          <label class="form-check-label" for="darkSwitch">Dark mode</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header Area -->
+<div class="header-area" id="headerArea">
+  <div class="container">
+    <!-- Paste your Header Content from here -->
+    <!-- Header Content -->
+    <div class="header-content position-relative d-flex align-items-center justify-content-between">
+      <!-- Back Button -->
+      <div class="back-button">
+        <a href="/">
+          <i class="bi bi-arrow-left-short"></i>
+        </a>
+      </div>
+
+      <!-- Page Title -->
+      <div class="page-heading">
+        <h6 class="mb-0">No Internet</h6>
+      </div>
+
+      <!-- Settings -->
+      <div class="setting-wrapper">
+        <div class="setting-trigger-btn" id="settingTriggerBtn">
+          <i class="bi bi-gear"></i>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Page Content Wrapper -->
+<div class="page-content-wrapper py-3">
+  <div class="container">
+    <div class="card text-center px-3">
+      <div class="card-body">
+        <i class="bi bi-wifi-off text-danger mb-2"></i>
+        <h5>No internet connection!</h5>
+        <p class="mb-0">
+          Seems like you're offline, please check your internet connection. This page doesn't support
+          when you offline!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

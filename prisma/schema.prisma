@@ -1,0 +1,101 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String          @id @default(uuid())
+  role           Role            @default(BASIC)
+  referrerId     String?         @unique
+  referrer       User?           @relation("ReferredByUser", fields: [referrerId], references: [id])
+  refferered     User?           @relation("ReferredByUser")
+  firstName      String
+  lastName       String
+  initials       String
+  nickname       String
+  countryId      String
+  country        Country         @relation("userCountry", fields: [countryId], references: [id])
+  address        String
+  aboutMe        String
+  contactNumber  String
+  email          String          @unique
+  password       String
+  paymentMethods PaymentMethod[] @relation("userPaymentMethod")
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  status         Status          @default(PENDING)
+
+  @@index([email])
+}
+
+model PaymentMethod {
+  id        String          @id @default(uuid())
+  type      PaymentType     @default(BANK)
+  bank      Bank?           @relation("bankPaymentMethod", fields: [bankId], references: [id])
+  bankId    String?
+  user      User            @relation("userPaymentMethod", fields: [userId], references: [id])
+  userId    String
+  gateway   PaymentGateway? @relation("gatewayPaymentMethod", fields: [gatewayId], references: [id])
+  gatewayId String?
+  account   String
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+  status    Status          @default(ACTIVE)
+}
+
+model PaymentGateway {
+  id            String          @id @default(uuid())
+  gateway       String
+  PaymentMethod PaymentMethod[] @relation("gatewayPaymentMethod")
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  status        Status          @default(ACTIVE)
+}
+
+model Bank {
+  id            String          @id @default(uuid())
+  countryId     String
+  country       Country         @relation("bankCountry", fields: [countryId], references: [id])
+  name          String
+  PaymentMethod PaymentMethod[] @relation("bankPaymentMethod")
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  status        Status          @default(ACTIVE)
+}
+
+model Country {
+  id          String   @id @default(uuid())
+  countryName String
+  countryCode String
+  phoneCode   String
+  bank        Bank[]   @relation("bankCountry")
+  user        User[]   @relation("userCountry")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  status      Status   @default(ACTIVE)
+}
+
+enum PaymentType {
+  BANK
+  GATEWAY
+}
+
+enum Role {
+  BASIC
+  EDITOR
+  ADMIN
+}
+
+enum Status {
+  PENDING
+  ACTIVE
+  INACTIVE
+  DELETED
+}

@@ -1,0 +1,30 @@
+  <div class="header-area" id="headerArea">
+    <div class="container">
+      <div class="header-content position-relative d-flex align-items-center justify-content-between">
+        <% if(show.back){ %>
+          <!-- Back Button -->
+          <div class="back-button">
+            <a href="#" onclick="history.go(-1);return false;">
+              <i class="bi bi-arrow-left-short"></i>
+            </a>
+          </div>
+        <% } %>
+
+        <!-- Page Title -->
+        <div class="page-heading">
+          <h6 class="mb-0"><%- title %></h6>
+        </div>
+
+        <!-- Navbar Toggler -->
+        <!--
+        <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas">
+          <span class="d-block"></span>
+          <span class="d-block"></span>
+          <span class="d-block"></span>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+
+  <% include _leftSideNav.html %>

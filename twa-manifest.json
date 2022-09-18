@@ -1,0 +1,43 @@
+{
+  "packageId": "me.cronje.pj.twa",
+  "host": "pj.cronje.me",
+  "name": "The Precious Journey",
+  "launcherName": "PJG",
+  "display": "standalone",
+  "themeColor": "#242644",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#0D5AFD",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://pj.cronje.me/assets/img/icon-512x512.webp",
+  "maskableIconUrl": "https://pj.cronje.me/assets/img/icon-512x512.webp",
+  "monochromeIconUrl": "https://pj.cronje.me/assets/img/icon-192x192.webp",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://pj.cronje.me/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://pj.cronje.me/",
+  "minSdkVersion": 19,
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "appVersion": "1"
+}

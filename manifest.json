@@ -1,0 +1,72 @@
+{
+    "name": "The Precious Journey",
+    "short_name": "PJG",
+    "start_url": "pj.cronje.me",
+    "display": "standalone",
+    "background_color": "#0d5afd",
+    "theme_color": "#0d5afd",
+    "categories": ["mobile", "multipurpose", "pwa"],
+    "orientation": "portrait",
+    "description": "The Precious Journey",
+    "icons": [{
+        "src": "assets/img/icon-72x72.webp",
+        "type": "image/webp",
+        "sizes": "72x72",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-96x96.webp",
+        "type": "image/webp",
+        "sizes": "96x96",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-128x128.webp",
+        "type": "image/webp",
+        "sizes": "128x128",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-144x144.webp",
+        "type": "image/webp",
+        "sizes": "144x144",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-152x152.webp",
+        "type": "image/webp",
+        "sizes": "152x152",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-167x167.webp",
+        "type": "image/webp",
+        "sizes": "167x167",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-180x180.webp",
+        "type": "image/webp",
+        "sizes": "180x180",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-192x192.webp",
+        "type": "image/webp",
+        "sizes": "192x192",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-384x384.webp",
+        "type": "image/webp",
+        "sizes": "384x384",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/icon-512x512.webp",
+        "type": "image/webp",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+      }
+    ]
+  }
