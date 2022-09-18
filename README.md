@@ -7,6 +7,7 @@
 - [About the Service Worker](./docs/sw.md)
 - [Download the Android App](https://pj.cronje.me/app-release-signed.apk)
 - [Detailed list of updates](https://github.com/charlpcronje/pj.pwa.tests/commits/main)
+- [List of test Done to Prepare](https://github.com/charlpcronje/pj.pwa.tests)
 
 ## App Under Development
 
