@@ -1,10 +1,3 @@
----
-created: 2022-09-15T00:59:09 (UTC +02:00)
-tags: [node,koa,passport,authentication,postgres,koa 2,postgres,redis]
-source: https://mherman.org/blog/user-authentication-with-passport-and-koa/
-author: 
----
-
 # User Authentication with Passport and Koa
 
 > ## Excerpt
