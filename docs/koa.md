@@ -1,12 +1,5 @@
-# User Authentication with Passport and Koa
-
-> ## Excerpt
-> This post demonstrates how to add user authentication to a Koa app with Passport.js.
-
----
+# Koa Framework
 #### Parts
-
-This article is part of a 4-part Koa and Sinon series…
 
 1.  [Building a RESTful API with Koa and Postgres](http://mherman.org/blog/2017/08/23/building-a-restful-api-with-koa-and-postgres)
 2.  [Stubbing HTTP Requests with Sinon](http://mherman.org/blog/2017/11/06/stubbing-http-requests-with-sinon)
